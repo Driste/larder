@@ -22,7 +22,7 @@
               "' target='_blank'>" . 
               $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
             } else {
-              $hint=$hint . "<br /><a href='" . 
+              $hint=$hint . "<a id='test' href='" . 
               $z->item(0)->childNodes->item(0)->nodeValue . 
               "' target='_blank'>" . 
               $y->item(0)->childNodes->item(0)->nodeValue . "</a>";

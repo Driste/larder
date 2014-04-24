@@ -3023,6 +3023,24 @@ a {
   a img {
     border: none; }
 
+#livesearch{
+	background-color: #fff;
+	margin-top:-16px;
+	position: absolute;
+	width: 65%;
+	max-height: 180px;
+	z-index: 99;
+}#livesearch a{
+	display: block;
+	margin: 0px;
+	padding-left: 5px;
+	line-height: 30px;
+	font-weight: bold;
+}#livesearch a:hover{
+	background-color: #dbdbdb;
+	
+}
+
 /* Default paragraph styles */
 p {
   font-family: inherit;

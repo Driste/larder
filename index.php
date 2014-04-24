@@ -28,6 +28,23 @@
               xmlhttp.open("GET","livesearch.php?q="+str,true);
               xmlhttp.send();
             }
+			
+			document.onkeydown = checkKey;
+
+			function checkKey(e) {
+			
+				e = e || window.event;
+			
+				if (e.keyCode == '38') {
+					// up arrow
+					alert(event.keyCode);
+					document.getElementById("id here").select();
+				}
+				else if (e.keyCode == '40') {
+					// down arrow
+					document.getElementById("test").select();
+				}
+			}
         </script>
 	</head>
     
@@ -62,7 +79,7 @@
                 	<h3>Search Ingredient:</h3>
                     <form>
                         <input type="text" size="30" onkeyup="showResult(this.value)" placeholder="Search">
-                        <div id="livesearch"></div>
+                        <div class="large-center" id="livesearch"></div>
                     </form>
                 </div>
                 
