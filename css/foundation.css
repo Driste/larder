@@ -3038,7 +3038,8 @@ a {
 	font-weight: bold;
 }#livesearch a:hover{
 	background-color: #dbdbdb;
-	
+}.hlight{
+    background: #dbdbdb;
 }
 
 /* Default paragraph styles */

@@ -34,15 +34,21 @@
 			function checkKey(e) {
 			
 				e = e || window.event;
-			
+				var $hlight = $('div.hlight'), $div = $('a');
+				
 				if (e.keyCode == '38') {
 					// up arrow
-					alert(event.keyCode);
-					document.getElementById("id here").select();
+					$hlight.removeClass('hlight').prev().addClass('hlight');
+					if ($hlight.prev().length == 0) {
+						$div.eq(-1).addClass('hlight')
+					}
 				}
 				else if (e.keyCode == '40') {
 					// down arrow
-					document.getElementById("test").select();
+					$hlight.removeClass('hlight').next().addClass('hlight');
+					if ($hlight.next().length == 0) {
+						$div.eq(0).addClass('hlight')
+					}
 				}
 			}
         </script>
